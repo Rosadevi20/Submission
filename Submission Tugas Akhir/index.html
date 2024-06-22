@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Portfolio</title>
+    <!--Link CSS-->
+    <link rel="stylesheet" href="css/app.css"/>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet"/>
+
+</head>
+<body>
+    <header class="navbar-container">
+        <div class="logo">
+            <img src="img/logo-rosa.png" alt="Rosa Devi"/>
+        </div>
+        <nav class="nav-list"> 
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#last-project">Last Project</a></li>
+                <li><a href="#contact-me">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="content" class="main-content">
+            <div class="content-description">
+                <h1 class="title">Hello Welcome</h1>
+                <p>UI/UX Designer | Front End Web Developer | Data Analyst</p>
+            </div>
+            <div class="content-image">
+                <img src="img/rosa-cropped.png" alt="Rosa Devi"/>
+            </div>  
+        </div> 
+
+        <article id="about-me" class="about-me-section">
+            <div class="about-me-photo">
+                <img src="img/rosa-photo.jpeg" alt="Rosa Devi" class="featured-image"/>
+            </div>   
+            <div class="about-me-text">
+                <h2>About Me</h2>
+                <p>
+                    Hello, I'm Rosa, an Informatics Engineering fresh graduate from Brawijaya University who is interested in UI/UX Design,
+                    Researcher, and Front End Web Development. During my college years, I participated in several organizations, volunteers,
+                    social projects, and committee events. I'm a goals-oriented person and have various abilities such as teamwork, time
+                    management, public speaking, design tools, programming languages, and Microsoft Office. In addition, I also do a lot of
+                    projects in courses that support my interests and help develop my skills.
+                </p>
+            </div>
+        </article>
+
+        <article id="last-project">
+            <h2>Last Project</h2>
+            <p>Here are some of the projects I have worked on both in the development and data fields with my various roles in the projects:</p>
+            <section class="card-container">
+                <div class="card">
+                    <h3>FUNDHUB as a Researcher</h3>
+                    <p>
+                        Fundhub is a crowdfunding fintech application that solves the problems of investors who fail
+                        to pay or experience losses and solve the problems of UMKM who have difficulty finding funding.
+                        This project was carried out using the agile-scrum method which was carried out for 2
+                        sprints from June 5 to June 30. This project also uses a design thinking approach.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>COBEAST as an UI/UX Designer</h3>
+                    <p>
+                        COBEAST as a mobile app for buying cakes online by informing the types of cakes, availability, and
+                        designing a delivery system through the application.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Balai Kopi Apps as a Front End Developer</h3>
+                    <p>
+                        Balai Kopi application is an e-commerce application for buying and selling coffee beans in the Malang 
+                        area which is developed using the Kotlin language android studio tools in collaboration with 2 backend developers.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>3D City Road as a Programmer</h3>
+                    <p> 
+                        Create computer graphics using C++ and GLSL using visual studio tools and collaborate with 1 programmer.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>West Java Provincial Government as a Data Analyst</h3>
+                    <p>
+                        Dashboard on the Guarantee and Number of Health Facilities in West Java to evaluate the condition of health 
+                        facilities and health services in each Regency/City in West Java.
+                    </p>
+                </div>
+            </section>
+        </article>
+        
+        <article class="contact-form-container">
+            <h2 id="contact-me">Contact</h2>
+            <form class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </article>
+
+        <aside>
+            <div class="social-media">
+                <ul>
+                    <li><a href="https://www.instagram.com/rosadevi_?igsh=MmNoczVtd2hpNHIw"><img src="img/instagram.png" class="logoo"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/rosa-devi/"><img src="img/linkedin.png" class="logoo"></a></li>
+                    <li><a href="https://x.com/rosadevi_"><img src="img/twitter.png" class="logoo"></a></li>
+                    <li><a href="https://youtube.com/@rosadevi565?si=DH93tMSWwcHcg8hb"><img src="img/youtube.png" class="logoo"></a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Thanks for visiting &copy; 2024, Rosa Devi</p>
+    </footer>
+</body>
+</html>

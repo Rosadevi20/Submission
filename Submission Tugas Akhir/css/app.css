@@ -1,0 +1,278 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  height: 100vh; /* Fixed typo: changed from '100hv' to '100vh' */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header.navbar-container {
+  width: 100%;
+  max-width: 1200px;
+  padding-block: 1rem;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 9999;
+}
+
+header.navbar-container .logo img {
+  width: 150px;
+}
+ 
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+  background-color: #425c77;
+  color: white;
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+#content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-description {
+  flex: 1;
+}
+
+.content-description h1 {
+  margin-block: 1rem;
+  font-size: 3.5rem;
+}
+
+.content-description p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
+main .card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+main .card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  flex: 1;
+  max-width: 200px;
+  text-align: center;
+}
+
+main .card h3 {
+  margin-bottom: 10px;
+}
+
+main .card p {
+  font-size: 14px;
+}
+
+main .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form-container {
+  padding: 30px;
+  width: 100%;
+  max-width: 300px;
+  background: #fff;
+}
+
+.contact-form-container h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc; /* Fixed typo: changed from '1 px' to '1px' */
+  border-radius: 4px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #6288ad;
+  color: #fff;
+}
+
+.contact-form button:hover {
+  background-color: #425c77;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.main-content .content-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.main-content .content-image img {
+  width: 300px;
+  max-width: 250px;
+  margin: auto;
+  border-radius: 50%;
+}
+
+main aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+  
+}
+
+main aside .social-media {
+  height: 100%;
+  display: flex;
+
+}
+
+main aside .social-media ul {
+  padding: 1.5rem 1rem;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin: auto;
+  background-color: #7ca8d6;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+main aside .social-media li {
+  list-style-type: none;
+}
+
+main aside .social-media li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+main aside .social-media li a img {
+  width: 28px;
+  display: block;
+  margin: auto;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #425c77;
+  text-align: center;
+  font-weight: bold;
+}
+
+.about-me-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 40px 20px;
+}
+.about-me-photo {
+  flex: 1;
+}
+
+.about-me-photo img {
+  width: 200px;
+}
+
+.about-me-text {
+  flex: 2;
+
+}
+
+/* Medium devices (768px dan di bawahnya) */
+@media screen and (max-width: 768px) {
+  header.navbar-container {
+    flex-direction: column;
+  }
+  header.navbar-container .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+  }
+  main {
+    padding: 1rem 3rem;
+  }
+  main .content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  main .content .content-description .title {
+    font-size: 3rem;
+  }
+  main .content .content-description p {
+    font-size: 1rem;
+  }
+  main .content .content-image {
+    order: -1;
+  } 
+}
